@@ -8,74 +8,131 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Technical documentation </h1>
+    <header>
+        <h1>Technical documentation </h1>
+    </header>
     <main id="main-doc">
-
+        
         <section class="main-section" id="css_selectors">
             <header>
                 <h2>Css selectors</h2>
                 <h3>And the use of them</h3>
             </header>
 
-            <p></p>
-        </section>
-
-        <section class="main-section" id="box_model">
-            <header>
-                <h2>Css selectors</h2>
-                <h3>And the use of them</h3>
-            </header>
-
             <p>
-                
+                There are a lot of different css selectors. Each are 
+                used for different things, depending on what
+                you want to style.     
             </p>
+            
+            <p>A type selector is the most general one. For example, using the 
+                div tag will select and style every div element. With ID's and 
+                classes, you can make it more specific. An ID selector may only have one
+            ID tag and the ID tag can only be use once in the HMTL doc. This differs
+            from the class selector, which may be used multiple times. An element
+            may contain several diffrerent classes. </p>
         </section>
 
+        <section class="main-section" id="vsc_short_commandos">
+            <header>
+                <h2>Short commandos in VSC</h2>
+            </header>
+            
+            <p>
+                There are several different short commandos in Visual 
+                Studio Code that makes it your coding more efficient.
+                My top three favorites are:
+            </p>
+            <ol>
+                <li>Ctrl + D: Multimakrs identical code</li>
+                <li>Alt + up/down: Moves code up or down</li>
+                <li>Alt + shift + down: Copies the code and places it
+                    below</li>
+            </ol>
+        </section>
+        
         <section class="main-section" id="block_vs_inline_block">
             <header>
-                <h2>Css selectors</h2>
-                <h3>And the use of them</h3>
+                <h2>Blocks vs inline block</h2>
             </header>
 
-            <p>
+            <h3>Block</h3>
+            <p><b>Display:block;</b></p>
+            <p>Starts on a new line and takes up the whole width.
+                (dominating!). Forces elements to be placed beneath.
+                Is effected by properties that manipulate 
+                width/height.</p>
                 
+                <h3>Inline block</h3>
+                <p><b>Display:inline-block;</b></p>
+                <p>Doesn't take up the whole row and allows elements to be placed beside it.
+                An inline-block if not effected by the height property.
             </p>
         </section>
-
+        
         <section class="main-section" id="flexbox">
             <header>
-                <h2>Css selectors</h2>
-                <h3>And the use of them</h3>
+                <h2>Flexbox</h2>
+                
             </header>
-
+            
             <p>
+                Flexbox is a modern and efficient way of creating layouts. May
+                well be used in combination with CSS grids.
                 
             </p>
         </section>
 
         <section class="main-section" id="css_grids">
             <header>
-                <h2>Css selectors</h2>
-                <h3>And the use of them</h3>
+                <h2>CSS grids</h2>
             </header>
-
+            
             <p>
-                
-            </p>
-        </section>
-
-        <section class="main-section" id="positioning">
-            <header>
-                <h2>Css selectors</h2>
-                <h3>And the use of them</h3>
-            </header>
-
-            <p>
+                A modern and efficient way of creating a layout by lining 
+                up a grid and creating columns and rows. Differs from flexbox since
+                it's two-dimensional
                 
             </p>
         </section>
         
+        <section class="main-section" id="positioning">
+            <header>
+                <h2>Css selectors</h2>
+            </header>
+            
+            <p>
+                Positioning things where you want to.
+            </p>
+            <ul>
+                <li>position:static;</li>
+                <li>position:relative;</li>
+                <li>position:absolute;</li>
+                <li>position:fixed;</li>
+                <li>position:sticky;</li>
+                
+            </ul>
+        </section>
+        
     </main>
     
+    <aside>
+        <nav id="navbar">
+            <header>
+                
+                <p>This is a basic documentation of useful HTML information</p>
+            </header>
+            <ul>
+                <li><a href="#css_selectors" class="nav-link">CSS selectors</a></li>
+                <li><a href="#vsc_short_commandos" class="nav-link">Short commandos</a></li>
+                <li><a href="#block_vs_inline_block" class="nav-link">Blocks</a></li>
+                <li><a href="#flexbox" class="nav-link">Flexbox</a></li>
+                <li><a href="#css_grids" class="nav-link">CSS grids</a></li>
+                <li><a href="#positioning" class="nav-link">Positioning</a></li>
+            </ul>
+    
+        </nav>
+    </aside>
+
 </body>
 </html>

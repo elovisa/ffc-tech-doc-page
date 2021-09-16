@@ -1,0 +1,154 @@
+:root{
+    /*Colors*/
+    --main-bg-color:white;
+    --secondary-bg-color:rgb(35, 4, 56);
+
+    /*Text colors*/
+    --main-text-color:black;
+    --secondary-text-color:rgb(179, 169, 231);
+    --third-text-color:white;
+    --hover-text-color:white;
+
+    /*Spacing*/
+    --main-margin:20px;
+    --main-padding:20px;
+}
+
+body{
+    font-family:"helvetica neue", sans-serif;
+}
+a,
+p,
+li{
+    line-height: 150%;
+}
+
+p{
+    max-width:800px;
+}
+p,
+li{
+    font-size:20px;
+}
+li{
+    margin:15px 0;
+}
+a{
+    text-decoration:none;
+    color:var(--secondary-text-color);   
+    padding:10px 0;
+    margin-top:var(--main-margin);
+    font-size:24px;
+}
+a:hover{
+    color:var(--hover-text-color);
+    border-bottom:1px solid white;
+}
+
+#container{
+    position:relative;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows:auto;
+
+}
+
+header{
+    margin-top:20px;
+}
+
+#title-header{
+    grid-column:2/-1;
+    grid-row:1/2;
+    text-align:center;
+    border-bottom:1px solid #333;
+    margin:var(--main-margin);
+}
+
+
+main{
+    grid-column:2/3;
+    grid-row:2/3;
+}
+
+aside{
+    grid-column:1/2;
+    grid-row:1/3;
+    border-right:1px dotted #333;
+    padding:var(--main-padding);
+    position:sticky;
+    text-align:left;
+    background-color: var(--secondary-bg-color);
+    top:0;
+    lefT:0;
+    height:100vh;
+}
+#navbar p{
+    color:var(--third-text-color);
+    margin:var(--main-margin);
+    padding-bottom:var(--main-padding);
+    text-align:center;
+    border-bottom:1px dotted gray;
+}
+
+
+
+
+#navbar ul{
+    list-style-type:none;
+
+}
+
+.main-section{
+    margin:var(--main-margin);
+    border-bottom:1px solid gray;
+    padding-left:40px;
+}
+
+@media screen and (max-width:960px){
+    .main-section p{
+        margin-right:var(--main-margin);
+    }
+    #navbar p {
+        text-align:left;
+        
+    }
+
+}
+
+@media screen and (max-width:768px){
+    #container{
+        width:100%;
+    }
+    a{
+        margin:5px;
+        margin-left:0;
+        padding:5px;
+    }
+    aside{
+        grid-column:1/3;
+        grid-row:1/2;
+        position:relative;
+        /* width:100%; */
+        height:100px;
+    }
+    #navbar p{
+        display:none;
+    }
+    #navbar ul{
+        display:flex;
+        padding-left:0;
+    }
+    
+    #title-header{
+        grid-column:1/3;
+        grid-row:2/3;
+        position:relative;
+    }
+    main{
+        grid-column:1/3;
+        grid-row:3/4;
+        position:relative;
+    }
+
+}
